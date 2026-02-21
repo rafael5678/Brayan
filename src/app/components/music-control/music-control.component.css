@@ -1,0 +1,26 @@
+.music-control {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 1000;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 24px var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.music-control:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 32px rgba(212, 168, 83, 0.35);
+}
+
+.music-icon {
+  font-size: 26px;
+}

@@ -1,0 +1,25 @@
+========================================
+  COMO VER LA PAGINA EN  http://localhost:4201
+========================================
+
+--- PARA VER CON LA DIRECCION localhost:4201 ---
+
+  1. Haz DOBLE CLIC en:
+
+       INICIAR-SERVIDOR-Y-ABRIR.bat
+
+  2. Se abrira una ventana negra y el navegador en
+     http://localhost:4201  (a veces tarda unos segundos).
+
+  3. No cierres la ventana negra mientras quieras ver la pagina.
+     Para detener el servidor: cierra la ventana o Ctrl+C.
+
+  No necesitas npm install ni Angular. Solo Node.js.
+  Si no tienes Node:  https://nodejs.org  (version LTS).
+
+--- OPCION SIN SERVIDOR ---
+
+  Doble clic en  ABRIR-PAGINA-AQUI.html
+  (Se abre como archivo; la direccion sera file:///...)
+
+========================================

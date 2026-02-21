@@ -1,0 +1,60 @@
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  text-align: center;
+  color: var(--deep);
+  margin-bottom: 48px;
+  font-weight: 600;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 72px;
+}
+
+.section-block {
+  margin-bottom: 64px;
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.photo-block {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px var(--shadow);
+  background: #fff;
+}
+
+.photo-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.photo-block:hover img {
+  opacity: 0.96;
+}
+
+.photo-caption {
+  padding: 20px 24px;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 0 20px 48px;
+  }
+}

@@ -1,0 +1,31 @@
+========================================
+  CÓMO SUBIR EL PROYECTO A GITHUB
+  https://github.com/rafael5678/Brayan
+========================================
+
+OPCIÓN 1 — Rápida (recomendada)
+--------------------------------
+1. Haz DOBLE CLIC en:  SUBIR-A-GITHUB.bat
+
+2. Si Git pide usuario y contraseña:
+   - Usuario: tu nombre de usuario de GitHub (rafael5678)
+   - Contraseña: usa un "Personal Access Token" (no tu contraseña normal)
+   
+   Crear token: GitHub → Settings → Developer settings → Personal access tokens
+
+3. Listo. Revisa: https://github.com/rafael5678/Brayan
+
+
+OPCIÓN 2 — Manual (desde la terminal)
+-------------------------------------
+Abre la terminal en la carpeta del proyecto y ejecuta:
+
+   git init
+   git remote add origin https://github.com/rafael5678/Brayan.git
+   git add .
+   git commit -m "Feliz Cumpleaños Brayan"
+   git branch -M main
+   git push -u origin main
+
+
+NOTA: Si no tienes Git instalado, descárgalo de https://git-scm.com

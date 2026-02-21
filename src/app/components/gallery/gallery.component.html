@@ -1,0 +1,20 @@
+<h2 class="section-title">Algunos momentos contigo</h2>
+
+<section class="section">
+  @for (photo of photos; track photo.src) {
+    <div class="section-block photo-block" appReveal>
+      <img
+        [src]="photo.src"
+        [alt]="photo.alt"
+        loading="lazy"
+        (click)="openModal(photo.src)"
+      >
+      <p class="photo-caption">{{ photo.caption }}</p>
+    </div>
+  }
+</section>
+
+<app-image-modal
+  [src]="modalSrc"
+  (close)="closeModal()"
+></app-image-modal>
