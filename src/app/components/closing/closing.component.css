@@ -1,16 +1,16 @@
 .closing {
   text-align: center;
   padding: 80px 24px 100px;
-  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #fff;
 }
 
 .closing .date {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.2em;
   color: var(--gold-light);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .closing h2 {
@@ -22,21 +22,42 @@
 }
 
 .closing p {
-  font-size: 1.05rem;
-  opacity: 0.9;
+  font-size: 1.1rem;
+  opacity: 0.95;
   max-width: 560px;
   margin: 0 auto 24px;
   line-height: 1.7;
 }
 
+.audio-mama {
+  margin: 40px auto 32px;
+  padding: 32px 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  max-width: 400px;
+  border: 2px solid rgba(240, 217, 154, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.audio-mama .audio-label {
+  font-size: 1.1rem !important;
+  margin-bottom: 16px !important;
+  color: var(--gold-light) !important;
+}
+
+.audio-mama audio {
+  width: 100%;
+  height: 48px;
+}
+
 .closing .heart {
-  font-size: 2rem;
-  margin-top: 32px;
+  font-size: 2.5rem;
+  margin-top: 24px;
   display: inline-block;
   animation: pulse 1.5s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.1); opacity: 0.9; }
+  50% { transform: scale(1.15); opacity: 0.9; }
 }

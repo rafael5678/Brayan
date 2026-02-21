@@ -27,7 +27,9 @@ const server = http.createServer((req, res) => {
         res.writeHead(500);
         return res.end('Error leyendo la pagina');
       }
-      const html = data.replace(/src="src\/assets\/images\//g, 'src="/images/');
+      const html = data
+        .replace(/src="src\/assets\/images\//g, 'src="/images/')
+        .replace(/src="src\/assets\/audio\//g, 'src="/audio/');
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(html);
     });
@@ -44,6 +46,19 @@ const server = http.createServer((req, res) => {
       const ext = path.extname(url).toLowerCase();
       const types = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif' };
       res.writeHead(200, { 'Content-Type': types[ext] || 'application/octet-stream' });
+      res.end(data);
+    });
+    return;
+  }
+
+  if (url.startsWith('/audio/')) {
+    const file = path.join(ROOT, 'src', 'assets', 'audio', path.basename(url));
+    fs.readFile(file, (err, data) => {
+      if (err) {
+        res.writeHead(404);
+        return res.end();
+      }
+      res.writeHead(200, { 'Content-Type': 'audio/ogg' });
       res.end(data);
     });
     return;

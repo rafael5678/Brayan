@@ -17,11 +17,11 @@
 }
 
 .message-box {
-  background: #fff;
-  border-radius: 20px;
+  background: linear-gradient(145deg, #ffffff 0%, #fdfbf7 100%);
+  border-radius: 24px;
   padding: 48px 40px;
-  box-shadow: 0 20px 60px var(--shadow);
-  border-left: 5px solid var(--gold);
+  box-shadow: 0 20px 60px var(--shadow), 0 0 0 1px rgba(212, 168, 83, 0.1);
+  border-left: 6px solid var(--gold);
 }
 
 .message-box .intro {

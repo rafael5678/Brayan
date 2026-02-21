@@ -6,7 +6,7 @@
   justify-content: center;
   text-align: center;
   padding: 40px 24px;
-  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 30%, #0f3460 60%, #1a1a2e 100%);
   position: relative;
   overflow: hidden;
 }
@@ -16,8 +16,9 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(212, 168, 83, 0.12), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(114, 47, 55, 0.1), transparent);
+    radial-gradient(ellipse 90% 60% at 50% 0%, rgba(212, 168, 83, 0.18), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 20% 80%, rgba(224, 122, 95, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 85% 50%, rgba(155, 93, 229, 0.1), transparent);
   pointer-events: none;
 }
 
@@ -48,8 +49,11 @@
 
 .name {
   font-size: clamp(1.8rem, 5vw, 3rem);
-  color: var(--gold-light);
-  font-weight: 500;
+  background: linear-gradient(135deg, var(--gold-light), var(--sunset));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
   margin-bottom: 32px;
 }
 

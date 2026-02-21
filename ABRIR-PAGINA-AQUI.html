@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¡Feliz Cumpleaños Brayan! — 22/02/2026</title>
+  <title>¡Feliz Cumpleaños Brayan! — 23/02/2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { --gold: #d4a853; --gold-light: #f0d99a; --deep: #1a1a2e; --wine: #722f37; --cream: #faf8f5; --shadow: rgba(26,26,46,0.15); }
+    :root { --gold: #d4a853; --gold-light: #f0d99a; --deep: #1a1a2e; --wine: #722f37; --cream: #faf8f5; --shadow: rgba(26,26,46,0.15); --coral: #e07a5f; --teal: #3d5a80; --sunset: #f2cc8f; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Outfit', sans-serif; background: var(--cream); color: var(--deep); min-height: 100vh; overflow-x: hidden; }
+    body { font-family: 'Outfit', sans-serif; background: linear-gradient(180deg,#faf8f5 0%,#f5f0e8 50%,#faf8f5 100%); color: var(--deep); min-height: 100vh; overflow-x: hidden; }
     .music-btn { position: fixed; top: 24px; right: 24px; z-index: 1000; width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border: 2px solid rgba(255,255,255,0.9); display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 8px 24px var(--shadow); font-size: 26px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
     .music-btn:hover { transform: scale(1.12); box-shadow: 0 12px 32px rgba(212,168,83,0.4); }
-    .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 24px; background: linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%); color: #fff; }
+    .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 24px; background: linear-gradient(160deg, #1a1a2e 0%, #16213e 30%, #0f3460 60%, #1a1a2e 100%); color: #fff; }
     .hero .badge { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 20px; animation: fadeInDown 1s ease-out; }
     .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.2rem, 10vw, 5.5rem); font-weight: 700; margin-bottom: 16px; animation: fadeInUp 1s ease-out 0.2s both; }
     .hero .name { font-size: clamp(2.2rem, 6vw, 3.8rem); color: var(--gold-light); margin-bottom: 40px; animation: fadeInUp 1s ease-out 0.4s both; }
@@ -31,12 +31,15 @@
     .photo-block:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 28px 80px rgba(26,26,46,0.25); }
     .photo-block img { width: 100%; height: auto; display: block; cursor: pointer; transition: transform 0.5s ease; }
     .photo-block:hover img { transform: scale(1.03); }
-    .photo-caption { padding: 24px 28px; font-size: 1.2rem; color: #555; text-align: center; font-style: italic; line-height: 1.5; }
-    .closing { text-align: center; padding: 100px 28px 120px; background: linear-gradient(160deg, #1a1a2e 0%, #16213e 100%); color: #fff; animation: fadeIn 1s ease-out; }
+    .photo-caption { padding: 24px 28px; font-size: 1.2rem; color: var(--teal); text-align: center; font-style: italic; line-height: 1.5; }
+    .closing { text-align: center; padding: 100px 28px 120px; background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; animation: fadeIn 1s ease-out; }
     .closing .date { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; letter-spacing: 0.25em; color: var(--gold-light); margin-bottom: 20px; }
     .closing h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 600; margin-bottom: 28px; line-height: 1.5; }
     .closing p { font-size: 1.3rem; opacity: 0.95; max-width: 600px; margin: 0 auto 28px; line-height: 1.8; }
-    .closing .heart { font-size: 3rem; margin-top: 40px; display: inline-block; animation: heartBeat 1.2s ease-in-out infinite; }
+    .closing .heart { font-size: 3rem; margin-top: 24px; display: inline-block; animation: heartBeat 1.2s ease-in-out infinite; }
+    .audio-mama { margin: 40px auto 32px; padding: 32px 24px; background: rgba(255,255,255,0.08); border-radius: 20px; max-width: 400px; border: 2px solid rgba(240,217,154,0.3); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+    .audio-mama .audio-label { font-size: 1.1rem; margin-bottom: 16px; color: var(--gold-light); }
+    .audio-mama audio { width: 100%; height: 48px; }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
@@ -62,7 +65,7 @@
   </div>
 
   <section class="hero">
-    <p class="badge">22 de febrero de 2026</p>
+    <p class="badge">23 de febrero — Nació en 1997</p>
     <h1>Feliz cumpleaños</h1>
     <p class="name">Brayan</p>
     <p class="hint">↓ Baja para ver tu mensaje ↓</p>
@@ -74,7 +77,7 @@
       <p>Feliz cumpleaños Brayan. Eres el regalo más bello: un hombre que nunca se ha rendido. Eres un hermano, un hijo que nunca se ha rendido; sin importar las cosas que te pasan en la vida, sigues adelante sin importar qué.</p>
       <p>Eres un hombre del cual tu madre y tus hermanos están orgullosos. Eres un hermano valiente que ha pasado tanto pero aún sigues de pie.</p>
       <p>Que este nuevo año esté lleno, pero lleno de salud, éxitos y nuevas aventuras, y que se cumplan todos esos sueños que tengas, hermano mío. Mi hermano, quiero que sepas que tu madre y nosotros, tus hermanos, te queremos demasiado. Aunque como cualquier familia peleamos y teníamos desacuerdos, ante todo siempre habrá ese amor de madre e hijo y de hermanos. Te queremos demasiado.</p>
-      <p>Que el día de hoy, 22/02/2026, tengas un maravilloso día y que Dios te cuide. Te amamos, ñaño.</p>
+      <p>Que el día de hoy, 23 de febrero de 2026, tengas un maravilloso día y que Dios te cuide. Te amamos, ñaño.</p>
       <p class="sign">— Con amor, tu familia</p>
     </div>
   </section>
@@ -90,12 +93,21 @@
     <div class="photo-block"><img src="src/assets/images/photo7.png" alt="Celebración" loading="lazy"><p class="photo-caption">Celebrando la vida</p></div>
     <div class="photo-block"><img src="src/assets/images/photo8.png" alt="Hermano" loading="lazy"><p class="photo-caption">Hermano querido</p></div>
     <div class="photo-block"><img src="src/assets/images/photo9.png" alt="Familia" loading="lazy"><p class="photo-caption">Unidos para siempre</p></div>
+    <div class="photo-block"><img src="src/assets/images/photo10.png" alt="Brayan" loading="lazy"><p class="photo-caption">De pequeño a hoy, tu historia</p></div>
+    <div class="photo-block"><img src="src/assets/images/photo11.png" alt="Familia" loading="lazy"><p class="photo-caption">Familia y mascotas juntos</p></div>
+    <div class="photo-block"><img src="src/assets/images/photo12.png" alt="Brayan" loading="lazy"><p class="photo-caption">Siempre elegante, hermano</p></div>
   </section>
 
   <section class="closing">
-    <p class="date">22 / 02 / 2026</p>
+    <p class="date">23 de febrero de 2026 — ¡29 años!</p>
     <h2>Que Dios te cuide y te bendiga siempre</h2>
     <p>Gracias por ser quien eres. Este día es tuyo.</p>
+    <div class="audio-mama">
+      <p class="audio-label">Un mensaje de mamá para ti 💕</p>
+      <audio controls preload="metadata">
+        <source src="src/assets/audio/mama.ogg" type="audio/ogg">
+      </audio>
+    </div>
     <p class="heart">❤️</p>
   </section>
 

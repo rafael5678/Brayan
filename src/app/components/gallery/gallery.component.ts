@@ -24,6 +24,9 @@ export class GalleryComponent {
     { src: 'assets/images/photo7.png', alt: 'Celebración', caption: 'Celebrando la vida' },
     { src: 'assets/images/photo8.png', alt: 'Hermano', caption: 'Hermano querido' },
     { src: 'assets/images/photo9.png', alt: 'Familia', caption: 'Unidos para siempre' },
+    { src: 'assets/images/photo10.png', alt: 'Brayan', caption: 'De pequeño a hoy, tu historia' },
+    { src: 'assets/images/photo11.png', alt: 'Familia', caption: 'Familia y mascotas juntos' },
+    { src: 'assets/images/photo12.png', alt: 'Brayan', caption: 'Siempre elegante, hermano' },
   ];
 
   openModal(src: string): void {
