@@ -1,9 +1,19 @@
 <button
   type="button"
   class="music-control"
-  title="Reproducir / Pausar música"
+  title="Música de cumpleaños"
   aria-label="Música"
   (click)="toggle()"
 >
-  <span class="music-icon">{{ isPlaying ? '⏸️' : '🎵' }}</span>
+  <span class="music-icon">{{ panelOpen ? '⏸️' : '🎵' }}</span>
 </button>
+@if (panelOpen && ytUrl) {
+  <div class="youtube-panel">
+    <button type="button" class="yt-close" (click)="close()" aria-label="Cerrar">×</button>
+    <iframe
+      [src]="ytUrl"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+}
